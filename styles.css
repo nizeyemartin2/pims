@@ -1,0 +1,305 @@
+body {
+  background: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background: #1976d2;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #155a9c;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 250px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  background: #f9f9f9;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.dropdown-content a:hover {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    color: #333;
+    background: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dropdown-content {
+    position: static;
+  }
+}
+
+main {
+  padding: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.left-section {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.right-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #1976d2;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+
+.green-text {
+  color: #28a745;
+}
+
+.blue-text {
+  color: #1976d2;
+}
+
+.underline {
+  width: 50px;
+  height: 3px;
+  background: #1976d2;
+  margin: 10px 0 20px;
+}
+
+.get-started-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.get-started-card h3 {
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.blue-btn {
+  background: #1976d2;
+  color: white;
+}
+
+.green-btn {
+  background: #28a745;
+  color: white;
+}
+
+.mission-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stats-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  min-width: 150px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.light-blue {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.light-green {
+  background: #eafaf1;
+  color: #28a745;
+}
+
+.light-yellow {
+  background: #fff9e6;
+  color: #b8860b;
+}
+
+.footer {
+  background-color: #1e2836;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+
+
+
+/* Reset default padding/margin */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  background-color: #f5faff;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e88e5;
+  color: white;
+  font-weight: bold;
+  padding: 12px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: sans-serif;
+  white-space: nowrap;
+}
+
+nav a .dropdown-icon {
+  margin-left: 5px;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+/* Optional: if Services has a dropdown menu */
+nav .dropdown {
+  position: relative;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 200px;
+  z-index: 999;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+

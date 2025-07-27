@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PIMS Rwanda - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="logo.png" alt="PIMS Logo" />
+  </div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav id="main-nav">
+    <a href="#">Home</a>
+    <a href="#">About Us</a>
+    <div class="dropdown">
+      <a href="#">Services ▼</a>
+      <div class="dropdown-content">
+        <a href="infrastructure-registration.html">Infrastructure Registration and Mapping</a>
+        <a href="#">Technical Documents</a>
+        <a href="#">DWR System</a>
+        <a href="#">Loss Tracking & Monitoring</a>
+        <a href="#">Standard Certification</a>
+        <a href="#">Data & Analytics for Policy and Investment</a>
+        <a href="#">Market Linkages & Coordination</a>
+        <a href="#">Process Optimization</a>
+      </div>
+    </div>
+    <a href="#">Innovation & Product Development Hub</a>
+    <a href="#">Training Application</a>
+  </nav>
+</header>
+
+<main>
+  <div class="container">
+    <div class="left-section">
+      <h1>
+        WELCOME TO <br />
+        POST HARVEST INFRASTRUCTURES <br />
+        <span class="green-text">MANAGEMENT SYSTEM</span>
+      </h1>
+      <p>
+        <strong class="blue-text">PIMS</strong>, Bridge between abundance in the field and food on the table
+      </p>
+      <div class="underline"></div>
+
+      <div class="get-started-card">
+        <h3>Get Started</h3>
+        <div class="buttons">
+          <button class="btn blue-btn" onclick="window.location.href='register.html'">Registration</button>
+          <button class="btn green-btn" onclick="window.location.href='login.html'">Login</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-section">
+      <div class="mission-card">
+        <h3>Our Mission</h3>
+        <p>
+          To efficiently manage agricultural harvest collection and storage across Rwanda's warehouses, collection centers, cold rooms, and drying sites. Streamline your post-harvest operations with our comprehensive management platform.
+        </p>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-card light-blue">
+          <h2>500+</h2>
+          <p>Facilities Managed</p>
+        </div>
+        <div class="stat-card light-green">
+          <h2>98%</h2>
+          <p>Harvest Efficiency</p>
+        </div>
+      </div>
+
+      <div class="stat-card light-yellow">
+        <h2>1M+</h2>
+        <p>Tons Processed Annually</p>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>© 2024 PIMS Rwanda-Product of ISHA CodeCraft Hub - Post Harvest Infrastructure Management System. All rights reserved.</p>
+</footer>
+
+<script>
+  function toggleMenu() {
+    document.getElementById('main-nav').classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
