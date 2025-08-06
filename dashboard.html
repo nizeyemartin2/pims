@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIMS Rwanda Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="dashboard41_colored.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <h2>PIMS Rwanda</h2>
+            <p>Post Harvest Infrastructure</p>
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="active"><i class='bx bxs-dashboard'></i> <span>Dashboard</span></li>
+                <li><i class='bx bx-chart'></i> <span>Overview</span></li>
+                <li><i class='bx bx-file'></i> <span>Reports</span></li>
+                <li><i class='bx bx-line-chart'></i> <span>Analytics</span></li>
+                <li class="section-title">Infrastructure</li>
+                <li><i class='bx bx-building-house'></i> <span>Warehouses</span></li>
+                <li><i class='bx bx-package'></i> <span>Collection Centers</span></li>
+                <li><i class='bx bx-fridge'></i> <span>Cold Rooms</span></li>
+                <li><i class='bx bx-sun'></i> <span>Drying Sites</span></li>
+                <li class="section-title">Management</li>
+                <li><i class='bx bx-user'></i> <span>Staff</span></li>
+                <li><i class='bx bx-cog'></i> <span>Settings</span></li>
+            </ul>
+        </nav>
+        <div class="user-panel">
+            <div class="user-info">
+                <p>Nizeyemartin2<br><small>Admin</small></p>
+            </div>
+            <a href="index.html" style="text-decoration: none;" >
+            <button class="btn btn-back">← Back to Home</button>
+            </a>
+            <button class="btn btn-logout">Logout</button>
+        </div>
+    </div>
+
+    <main class="main-content">
+        <header class="main-header">
+            <div class="header-left">
+                <i class='bx bx-menu sidebar-toggle-btn'></i>
+                <div class="header-content">
+                    <h1>Dashboard Overview</h1>
+                    <p>Key Performance Indicators</p>
+                </div>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+            </div>
+        </header>
+
+        <section class="data-filters-container">
+<div class="data-filters-info">
+<i class='bx bx-filter-alt'></i>
+<div>
+<h3>Data Filters</h3>
+<p>Customize your data view</p>
+</div>
+</div>
+<div class="filter-options">
+<div class="filter-group">
+<i class='bx bx-calendar'></i>
+<select class="filter-select">
+<option>2024</option>
+<option>2023</option>
+<option>2022</option>
+</select>
+</div>
+<div class="filter-group">
+<i class='bx bx-calendar'></i>
+<select class="filter-select">
+<option>All Months</option>
+<option>January</option>
+<option>February</option>
+<option>March</option>
+</select>
+</div>
+<div class="filter-group">
+<i class='bx bx-map-pin'></i>
+<select class="filter-select">
+<option>All Districts</option>
+<option>Kigali</option>
+<option>Huye</option>
+</select>
+</div>
+<div class="filter-group">
+<i class='bx bx-buildings'></i>
+<select class="filter-select">
+<option>All Facilities</option>
+<option>Kigali Central Warehouse</option>
+<option>Huye Collection Center</option>
+</select>
+</div>
+<div class="filter-group">
+<i class='bx bx-calendar-event'></i>
+<select class="filter-select">
+<option>All Quarters</option>
+<option>Q1</option>
+<option>Q2</option>
+<option>Q3</option>
+<option>Q4</option>
+</select>
+</div>
+</div>
+<button class="btn btn-primary filter-button">Filter</button>
+</section>
+
+        <section class="stats-grid">
+            <div class="stat-card">
+                <p>Total Facilities</p>
+                <span>24</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-progress="100"></div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p>Active Harvests</p>
+                <span>1,247</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-progress="75"></div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p>Storage Capacity</p>
+                <span>78%</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-progress="78"></div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <p>Staff Members</p>
+                <span>156</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" data-progress="50"></div>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-sections-grid">
+            <section class="facilities-list">
+                <h3>Infrastructure Facilities</h3>
+                <div class="facility-item">
+                    <span>Kigali Central Warehouse</span>
+                    <span class="status active">85% Active</span>
+                </div>
+                <div class="facility-item">
+                    <span>Huye Collection Center</span>
+                    <span class="status active">67% Active</span>
+                </div>
+                <div class="facility-item">
+                    <span>Musanze Cold Room</span>
+                    <span class="status active">92% Active</span>
+                </div>
+                <div class="facility-item">
+                    <span>Nyagatare Drying Site</span>
+                    <span class="status maintenance">43% Maintenance</span>
+                </div>
+            </section>
+
+            <section class="actions">
+                <h3>Quick Actions</h3>
+                <button class="btn btn-primary">Record New Harvest</button>
+                <button class="btn">Add New Facility</button>
+                <button class="btn">Generate Reports</button>
+                <button class="btn">System Settings</button>
+            </section>
+        </div>
+        
+        <section class="daily-updates-grid">
+            <div class="daily-update-card">
+                <h4><i class='bx bx-calendar'></i> Today's Activity</h4>
+                <div class="metric-item">
+                    <p>New Harvests</p>
+                    <span>34</span>
+                </div>
+                <div class="metric-item">
+                    <p>Facilities Inspected</p>
+                    <span>5</span>
+                </div>
+                <div class="metric-item">
+                    <p>Reports Filed</p>
+                    <span>7</span>
+                </div>
+            </div>
+            
+            <div class="daily-update-card">
+                <h4><i class='bx bx-trending-up'></i> Performance Metrics</h4>
+                <div class="metric-item">
+                    <p>Above Capacity</p>
+                    <span>2 Facilities</span>
+                </div>
+                <div class="metric-item">
+                    <p>Maintenance Due</p>
+                    <span>+1 Site</span>
+                </div>
+                <div class="metric-item">
+                    <p>Overall Status</p>
+                    <span>Stable</span>
+                </div>
+            </div>
+
+            <div class="daily-update-card">
+                <h4><i class='bx bx-health'></i> System Health</h4>
+                <div class="metric-item">
+                    <p>Data Sync Status</p>
+                    <span>Online</span>
+                </div>
+                <div class="metric-item">
+                    <p>Server Load</p>
+                    <span>25%</span>
+                </div>
+                <div class="metric-item">
+                    <p>Last Update</p>
+                    <span>2 min ago</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
