@@ -1,0 +1,160 @@
+/* Add these styles to your existing styles.css file */
+
+.content-section {
+  padding: 40px 20px;
+}
+
+.content-section h1 {
+  color: #004d40; /* Match the green text color */
+  margin-bottom: 20px;
+}
+
+.document-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.document-item {
+  background-color: #f0f4f8; /* Light background for the card */
+  border-left: 5px solid #007bff; /* Blue border on the left */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.document-item h2 {
+  color: #004d40;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.document-item p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+}
+
+/* You may need to add a style for the active link in the navigation */
+.dropdown-content .active {
+  background-color: #f1f1f1;
+  color: #004d40;
+}
+
+/* --- New Styles for Professional Document List --- */
+
+/* Main content area */
+.content-section {
+  padding: 40px 20px;
+  max-width: 1200px; /* Constrain the width for a cleaner look */
+  margin: 0 auto;
+}
+
+.content-section h1 {
+  color: #004d40;
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.content-section p {
+  color: #555;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+/* Document Grid Layout */
+.document-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 25px; /* Spacing between cards */
+}
+
+/* Individual Document Card */
+.document-item {
+  background-color: #ffffff; /* White background */
+  border: 1px solid #e0e0e0; /* Subtle border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft, professional shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  display: flex;
+  flex-direction: column;
+}
+
+.document-item:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Enhance shadow on hover */
+}
+
+.document-item h2 {
+  color: #004d40;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.document-item p {
+  color: #777;
+  font-size: 0.95em;
+  line-height: 1.5;
+  flex-grow: 1; /* Pushes button to the bottom */
+  margin-bottom: 20px;
+}
+
+/* Download Button */
+.download-btn {
+  display: inline-flex; /* Align icon and text */
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%; /* Full width button */
+  margin-top: auto; /* Push button to the bottom of the card */
+}
+
+.download-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.02); /* Subtle grow effect on hover */
+}
+
+/* Optional: Add a download icon */
+.download-btn::before {
+  content: "↓"; /* Unicode character for a download arrow */
+  font-size: 1.2em;
+  margin-right: 8px;
+}
+/* --- Styles for Group Numbering and Names --- */
+.content-section h2 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #004d40; /* Match the primary green color */
+  border-bottom: 2px solid #e0e0e0; /* Add a subtle line underneath */
+  padding-bottom: 10px;
+  margin-top: 50px; /* Space above each new group */
+  margin-bottom: 25px; /* Space below the group name */
+}
+
+/* To ensure the first h2 doesn't have a large top margin */
+.content-section h2:first-of-type {
+  margin-top: 20px;
+}
